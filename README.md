@@ -7,10 +7,10 @@ and Terraform tells you something like:
 
 Given two arguments, `current address prefix` and `new address prefix`, this tool will simply
 call `terraform state mv <current address> <new address>` once for every pair of resources
-involved in the plan where one is being created, one is being destroyed, and the addresses of
-both have matching strings following their respective prefixes.
+involved in the plan where the "current" one is being created, the "new" one is being destroyed,
+and the addresses of both have matching strings following their respective prefixes.
 
-### Example
+### Examples
 
 If a module `bob` is renamed to `david`:
 
